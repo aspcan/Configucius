@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ConfigManager.Provider.SQL</AssemblyName>
+    <Authors>Gökhan Gökalp</Authors>
+    <Company>Boyner Grup</Company>
+    <Description>It provides reading your configurations from a SQL server.</Description>
+    <PackageId>Configucius.Provider.SQL</PackageId>
+    <Product>Configucius.Provider.SQL</Product>
+    <PackageProjectUrl>https://github.com/boyneronline/Configucius</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/boyneronline/Configucius</RepositoryUrl>
+    <PackageTags>config reader, configuration reader</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Configucius.Core\Configucius.Core.csproj" />
+    <ProjectReference Include="..\Configucius.Core\Configucius.Core.csproj" />
+  </ItemGroup>
+
+</Project>
