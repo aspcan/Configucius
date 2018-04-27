@@ -15,7 +15,7 @@ dotnet add package Configucius
 
 ### Usages
 -----
-Simple usage of Comfigucius. 
+Simple usage of Configucius. 
 First, you need to add some parameters in your app.config file as follows:
 
 - "Configucius_ConnectionString" for MSSQL provider.
