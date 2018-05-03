@@ -2,6 +2,8 @@
 
 Configucius is a simple netstandard20 based configuration reader.
 
+[![NuGet version](https://badge.fury.io/nu/Configucius.svg)](https://badge.fury.io/nu/Configucius)
+
 ### NuGet Packages
 ``` 
 dotnet add package Configucius
