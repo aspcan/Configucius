@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Threading;
 
@@ -15,11 +14,11 @@ namespace Configucius.Core
         private static ConcurrentDictionary<string, Config> _values;
         private static Timer _timer;
 
-        public ConfiguciusClient(IConfigRepository configRepository, TimeSpan refreshTime)
+        public ConfiguciusClient(IConfigRepository configRepository, string domain, string environment, TimeSpan refreshTime)
         {
             _configRepository = configRepository;
-            _domain = ConfigurationManager.AppSettings["Configucius_Domain"];
-            _environment = ConfigurationManager.AppSettings["Configucius_Environment"];
+            _domain = domain;
+            _environment = environment;
             _values = GetConfigValues();
 
             _timer = new Timer(x =>

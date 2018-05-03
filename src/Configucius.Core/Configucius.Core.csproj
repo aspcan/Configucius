@@ -6,16 +6,12 @@
     <Authors>Gökhan Gökalp</Authors>
     <Company>Boyner Grup</Company>
     <Product>Configucius</Product>
-    <Description>Configucius is a simple netstandard20 based configuration reader.</Description>
-    <PackageTags>config reader, configuration reader</PackageTags>
+    <Description>Configucius is a simple netstandard20 based configuration reader</Description>
+    <PackageTags>config reader, configuration reader, configuration</PackageTags>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/boyneronline/Configucius</PackageProjectUrl>
     <RepositoryUrl>https://github.com/boyneronline/Configucius</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
-  </ItemGroup>
 
 </Project>
