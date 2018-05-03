@@ -10,19 +10,15 @@
     <Product>Configucius.Provider.SQL</Product>
     <PackageProjectUrl>https://github.com/boyneronline/Configucius</PackageProjectUrl>
     <RepositoryUrl>https://github.com/boyneronline/Configucius</RepositoryUrl>
-    <PackageTags>config reader, configuration reader</PackageTags>
+    <PackageTags>config reader, configuration reader, configuration</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Configucius" Version="1.0.1" />
     <PackageReference Include="Dapper" Version="1.50.4" />
     <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Configucius.Core\Configucius.Core.csproj" />
-    <ProjectReference Include="..\Configucius.Core\Configucius.Core.csproj" />
   </ItemGroup>
 
 </Project>

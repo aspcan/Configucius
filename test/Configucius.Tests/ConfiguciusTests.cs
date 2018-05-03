@@ -11,13 +11,17 @@ namespace Configucius.Tests
     {
         //TODO: All tests should be completed.
 
-        private IConfigucius _Configucius;
+        private IConfigucius _configucius;
 
         [SetUp]
         public void Initialize()
         {
+            string domain = "Product";
+            string environment = "Stage";
+            string connectionString = "";
 
-            _Configucius = new ConfiguciusClient(new SqlConfigRepository(), TimeSpan.FromMinutes(2));
+            _configucius = new ConfiguciusClient(new SqlConfigRepository(connectionString: connectionString),
+                domain: domain, environment: environment, refreshTime: TimeSpan.FromMinutes(2));
         }
 
         [Test]
@@ -28,7 +32,7 @@ namespace Configucius.Tests
             string expectedValue = "Hello World";
 
             //Act
-            string value = _Configucius.GetValue<string>(key);
+            string value = _configucius.GetValue<string>(key);
 
             //Assert
             value.Should().Be(expectedValue);
